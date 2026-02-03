@@ -9,15 +9,27 @@
 /* Begin PBXBuildFile section */
 		BA47ED2F2F31E1FC00999865 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED2E2F31E1FC00999865 /* HabitTrackerApp.swift */; };
 		BA47ED312F31E1FC00999865 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED302F31E1FC00999865 /* WelcomeView.swift */; };
-		BA47ED332F31E1FC00999865 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED322F31E1FC00999865 /* Item.swift */; };
 		BA47ED352F31E1FD00999865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA47ED342F31E1FD00999865 /* Assets.xcassets */; };
 		BA47ED382F31E1FD00999865 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA47ED372F31E1FD00999865 /* Preview Assets.xcassets */; };
 		BA47ED422F31E1FD00999865 /* HabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED412F31E1FD00999865 /* HabitTrackerTests.swift */; };
 		BA47ED4C2F31E1FD00999865 /* HabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED4B2F31E1FD00999865 /* HabitTrackerUITests.swift */; };
 		BA47ED4E2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED4D2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift */; };
+		BA74BF942F32B9C80093D032 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F972F32B4B600027F72 /* HabitListViewModel.swift */; };
+		BA74BF952F32B9C80093D032 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F972F32B4B600027F72 /* HabitListViewModel.swift */; };
+		BA74BF962F32B9CB0093D032 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F952F32B4A600027F72 /* Habit.swift */; };
+		BA74BF972F32B9CB0093D032 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F952F32B4A600027F72 /* Habit.swift */; };
+		BA74BF982F32B9D10093D032 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F932F32B49500027F72 /* DeveloperPreview.swift */; };
+		BA74BF992F32B9D20093D032 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F932F32B49500027F72 /* DeveloperPreview.swift */; };
+		BA74BF9A2F32B9D60093D032 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED2E2F31E1FC00999865 /* HabitTrackerApp.swift */; };
+		BA74BF9B2F32B9D70093D032 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED2E2F31E1FC00999865 /* HabitTrackerApp.swift */; };
+		BA74BF9C2F32B9DC0093D032 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED302F31E1FC00999865 /* WelcomeView.swift */; };
+		BA74BF9D2F32B9DC0093D032 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED302F31E1FC00999865 /* WelcomeView.swift */; };
 		BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 		BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 		BADE2F8E2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
+		BADE2F942F32B49500027F72 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F932F32B49500027F72 /* DeveloperPreview.swift */; };
+		BADE2F962F32B4A600027F72 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F952F32B4A600027F72 /* Habit.swift */; };
+		BADE2F982F32B4B600027F72 /* HabitListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F972F32B4B600027F72 /* HabitListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +53,6 @@
 		BA47ED2B2F31E1FC00999865 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA47ED2E2F31E1FC00999865 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
 		BA47ED302F31E1FC00999865 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		BA47ED322F31E1FC00999865 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		BA47ED342F31E1FD00999865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA47ED372F31E1FD00999865 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA47ED3D2F31E1FD00999865 /* HabitTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +61,9 @@
 		BA47ED4B2F31E1FD00999865 /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
 		BA47ED4D2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BADE2F8B2F32A6B300027F72 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
+		BADE2F932F32B49500027F72 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
+		BADE2F952F32B4A600027F72 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		BADE2F972F32B4B600027F72 /* HabitListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +114,10 @@
 		BA47ED2D2F31E1FC00999865 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
-				BA47ED2E2F31E1FC00999865 /* HabitTrackerApp.swift */,
-				BADE2F8B2F32A6B300027F72 /* HabitListView.swift */,
-				BA47ED302F31E1FC00999865 /* WelcomeView.swift */,
-				BA47ED322F31E1FC00999865 /* Item.swift */,
+				BADE2F8F2F32B43700027F72 /* App */,
+				BADE2F922F32B47F00027F72 /* Extension */,
+				BADE2F912F32B46F00027F72 /* Habit List */,
+				BADE2F902F32B46700027F72 /* Welcome */,
 				BA47ED342F31E1FD00999865 /* Assets.xcassets */,
 				BA47ED362F31E1FD00999865 /* Preview Content */,
 			);
@@ -133,6 +147,40 @@
 				BA47ED4D2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift */,
 			);
 			path = HabitTrackerUITests;
+			sourceTree = "<group>";
+		};
+		BADE2F8F2F32B43700027F72 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BA47ED2E2F31E1FC00999865 /* HabitTrackerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BADE2F902F32B46700027F72 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				BA47ED302F31E1FC00999865 /* WelcomeView.swift */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		BADE2F912F32B46F00027F72 /* Habit List */ = {
+			isa = PBXGroup;
+			children = (
+				BADE2F952F32B4A600027F72 /* Habit.swift */,
+				BADE2F8B2F32A6B300027F72 /* HabitListView.swift */,
+				BADE2F972F32B4B600027F72 /* HabitListViewModel.swift */,
+			);
+			path = "Habit List";
+			sourceTree = "<group>";
+		};
+		BADE2F922F32B47F00027F72 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BADE2F932F32B49500027F72 /* DeveloperPreview.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +314,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA47ED312F31E1FC00999865 /* WelcomeView.swift in Sources */,
+				BADE2F962F32B4A600027F72 /* Habit.swift in Sources */,
+				BADE2F942F32B49500027F72 /* DeveloperPreview.swift in Sources */,
+				BADE2F982F32B4B600027F72 /* HabitListViewModel.swift in Sources */,
 				BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */,
-				BA47ED332F31E1FC00999865 /* Item.swift in Sources */,
 				BA47ED2F2F31E1FC00999865 /* HabitTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,8 +326,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA74BF982F32B9D10093D032 /* DeveloperPreview.swift in Sources */,
+				BA74BF942F32B9C80093D032 /* HabitListViewModel.swift in Sources */,
 				BA47ED422F31E1FD00999865 /* HabitTrackerTests.swift in Sources */,
+				BA74BF9B2F32B9D70093D032 /* HabitTrackerApp.swift in Sources */,
+				BA74BF962F32B9CB0093D032 /* Habit.swift in Sources */,
 				BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */,
+				BA74BF9C2F32B9DC0093D032 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +341,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADE2F8E2F32A6B300027F72 /* HabitListView.swift in Sources */,
+				BA74BF972F32B9CB0093D032 /* Habit.swift in Sources */,
+				BA74BF9A2F32B9D60093D032 /* HabitTrackerApp.swift in Sources */,
+				BA74BF9D2F32B9DC0093D032 /* WelcomeView.swift in Sources */,
 				BA47ED4E2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift in Sources */,
 				BA47ED4C2F31E1FD00999865 /* HabitTrackerUITests.swift in Sources */,
+				BA74BF952F32B9C80093D032 /* HabitListViewModel.swift in Sources */,
+				BA74BF992F32B9D20093D032 /* DeveloperPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
