@@ -17,6 +17,7 @@ struct HabitListView: View {
                 Text("Today's tasks")
                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                     .fontWeight(.bold)
+                    .padding(.top, 30)
                 
                 VStack(alignment: .leading, spacing: 5) {
                     // Date
