@@ -42,7 +42,7 @@ struct WelcomeView: View {
             }
             
             // MARK: Content
-            VStack (alignment: .leading, spacing: 15) {
+            VStack(alignment: .leading, spacing: 15) {
                 // App Name
                 Text("HABIT TRACKER")
                     .font(.largeTitle)
@@ -58,6 +58,7 @@ struct WelcomeView: View {
                     action: {
                         
                     },
+
                     label: {
                         Text("Start")
                             .foregroundStyle(.white)

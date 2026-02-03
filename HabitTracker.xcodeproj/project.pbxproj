@@ -15,6 +15,9 @@
 		BA47ED422F31E1FD00999865 /* HabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED412F31E1FD00999865 /* HabitTrackerTests.swift */; };
 		BA47ED4C2F31E1FD00999865 /* HabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED4B2F31E1FD00999865 /* HabitTrackerUITests.swift */; };
 		BA47ED4E2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED4D2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift */; };
+		BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
+		BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
+		BADE2F8E2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,7 @@
 		BA47ED472F31E1FD00999865 /* HabitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA47ED4B2F31E1FD00999865 /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
 		BA47ED4D2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BADE2F8B2F32A6B300027F72 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				BA47ED2E2F31E1FC00999865 /* HabitTrackerApp.swift */,
+				BADE2F8B2F32A6B300027F72 /* HabitListView.swift */,
 				BA47ED302F31E1FC00999865 /* WelcomeView.swift */,
 				BA47ED322F31E1FC00999865 /* Item.swift */,
 				BA47ED342F31E1FD00999865 /* Assets.xcassets */,
@@ -261,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA47ED312F31E1FC00999865 /* WelcomeView.swift in Sources */,
+				BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */,
 				BA47ED332F31E1FC00999865 /* Item.swift in Sources */,
 				BA47ED2F2F31E1FC00999865 /* HabitTrackerApp.swift in Sources */,
 			);
@@ -271,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA47ED422F31E1FD00999865 /* HabitTrackerTests.swift in Sources */,
+				BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BADE2F8E2F32A6B300027F72 /* HabitListView.swift in Sources */,
 				BA47ED4E2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift in Sources */,
 				BA47ED4C2F31E1FD00999865 /* HabitTrackerUITests.swift in Sources */,
 			);
