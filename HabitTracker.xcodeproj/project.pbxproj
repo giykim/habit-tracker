@@ -24,6 +24,12 @@
 		BA74BF9B2F32B9D70093D032 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED2E2F31E1FC00999865 /* HabitTrackerApp.swift */; };
 		BA74BF9C2F32B9DC0093D032 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED302F31E1FC00999865 /* WelcomeView.swift */; };
 		BA74BF9D2F32B9DC0093D032 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47ED302F31E1FC00999865 /* WelcomeView.swift */; };
+		BA74BF9F2F32BBBE0093D032 /* HabitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BF9E2F32BBBE0093D032 /* HabitButtonView.swift */; };
+		BA74BFA22F32BC160093D032 /* HabitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BF9E2F32BBBE0093D032 /* HabitButtonView.swift */; };
+		BA74BFA32F32BC160093D032 /* HabitButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BF9E2F32BBBE0093D032 /* HabitButtonView.swift */; };
+		BA74BFA62F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */; };
+		BA74BFA72F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */; };
+		BA74BFA82F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */; };
 		BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 		BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 		BADE2F8E2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
@@ -60,6 +66,8 @@
 		BA47ED472F31E1FD00999865 /* HabitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA47ED4B2F31E1FD00999865 /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
 		BA47ED4D2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BA74BF9E2F32BBBE0093D032 /* HabitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonView.swift; sourceTree = "<group>"; };
+		BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonViewModel.swift; sourceTree = "<group>"; };
 		BADE2F8B2F32A6B300027F72 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		BADE2F932F32B49500027F72 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		BADE2F952F32B4A600027F72 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
@@ -149,6 +157,32 @@
 			path = HabitTrackerUITests;
 			sourceTree = "<group>";
 		};
+		BA74BFA02F32BC060093D032 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BADE2F952F32B4A600027F72 /* Habit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA74BFA12F32BC100093D032 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */,
+				BADE2F972F32B4B600027F72 /* HabitListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BA74BFA42F32BC410093D032 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA74BF9E2F32BBBE0093D032 /* HabitButtonView.swift */,
+				BADE2F8B2F32A6B300027F72 /* HabitListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BADE2F8F2F32B43700027F72 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,9 +202,9 @@
 		BADE2F912F32B46F00027F72 /* Habit List */ = {
 			isa = PBXGroup;
 			children = (
-				BADE2F952F32B4A600027F72 /* Habit.swift */,
-				BADE2F8B2F32A6B300027F72 /* HabitListView.swift */,
-				BADE2F972F32B4B600027F72 /* HabitListViewModel.swift */,
+				BA74BFA02F32BC060093D032 /* Models */,
+				BA74BFA42F32BC410093D032 /* Views */,
+				BA74BFA12F32BC100093D032 /* ViewModels */,
 			);
 			path = "Habit List";
 			sourceTree = "<group>";
@@ -318,7 +352,9 @@
 				BADE2F942F32B49500027F72 /* DeveloperPreview.swift in Sources */,
 				BADE2F982F32B4B600027F72 /* HabitListViewModel.swift in Sources */,
 				BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */,
+				BA74BFA62F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */,
 				BA47ED2F2F31E1FC00999865 /* HabitTrackerApp.swift in Sources */,
+				BA74BF9F2F32BBBE0093D032 /* HabitButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,8 +367,10 @@
 				BA47ED422F31E1FD00999865 /* HabitTrackerTests.swift in Sources */,
 				BA74BF9B2F32B9D70093D032 /* HabitTrackerApp.swift in Sources */,
 				BA74BF962F32B9CB0093D032 /* Habit.swift in Sources */,
+				BA74BFA72F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */,
 				BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */,
 				BA74BF9C2F32B9DC0093D032 /* WelcomeView.swift in Sources */,
+				BA74BFA22F32BC160093D032 /* HabitButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +386,8 @@
 				BA47ED4C2F31E1FD00999865 /* HabitTrackerUITests.swift in Sources */,
 				BA74BF952F32B9C80093D032 /* HabitListViewModel.swift in Sources */,
 				BA74BF992F32B9D20093D032 /* DeveloperPreview.swift in Sources */,
+				BA74BFA32F32BC160093D032 /* HabitButtonView.swift in Sources */,
+				BA74BFA82F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
