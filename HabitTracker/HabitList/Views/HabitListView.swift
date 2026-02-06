@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HabitListView: View {
     @StateObject var viewModel = HabitListViewModel()
+    @State var showAddHabitForm = false
 
     var body: some View {
         ScrollView {
@@ -47,7 +48,7 @@ struct HabitListView: View {
                     
                     Button(
                         action: {
-                            
+                            showAddHabitForm = true
                         },
                         
                         label: {
@@ -57,11 +58,15 @@ struct HabitListView: View {
                         }
                     )
                 }
+
+                Spacer()
             }
-            Spacer()
+            .padding()
         }
-        .padding()
-        .scrollClipDisabled()
+        .sheet(isPresented: $showAddHabitForm, content: {
+            AddHabitView()
+                .presentationDragIndicator(.visible)
+        })
     }
 }
 

@@ -30,6 +30,9 @@
 		BA74BFA62F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */; };
 		BA74BFA72F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */; };
 		BA74BFA82F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */; };
+		BA764CFB2F369EAE00FC8F0F /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764CFA2F369EAE00FC8F0F /* AddHabitView.swift */; };
+		BA764CFC2F369F8D00FC8F0F /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764CFA2F369EAE00FC8F0F /* AddHabitView.swift */; };
+		BA764CFD2F369F8D00FC8F0F /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764CFA2F369EAE00FC8F0F /* AddHabitView.swift */; };
 		BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 		BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 		BADE2F8E2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
@@ -68,6 +71,7 @@
 		BA47ED4D2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BA74BF9E2F32BBBE0093D032 /* HabitButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonView.swift; sourceTree = "<group>"; };
 		BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonViewModel.swift; sourceTree = "<group>"; };
+		BA764CFA2F369EAE00FC8F0F /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 		BADE2F8B2F32A6B300027F72 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		BADE2F932F32B49500027F72 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		BADE2F952F32B4A600027F72 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
@@ -124,7 +128,7 @@
 			children = (
 				BADE2F8F2F32B43700027F72 /* App */,
 				BADE2F922F32B47F00027F72 /* Extension */,
-				BADE2F912F32B46F00027F72 /* Habit List */,
+				BADE2F912F32B46F00027F72 /* HabitList */,
 				BADE2F902F32B46700027F72 /* Welcome */,
 				BA47ED342F31E1FD00999865 /* Assets.xcassets */,
 				BA47ED362F31E1FD00999865 /* Preview Content */,
@@ -179,6 +183,7 @@
 			children = (
 				BA74BF9E2F32BBBE0093D032 /* HabitButtonView.swift */,
 				BADE2F8B2F32A6B300027F72 /* HabitListView.swift */,
+				BA764CFA2F369EAE00FC8F0F /* AddHabitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,14 +204,14 @@
 			path = Welcome;
 			sourceTree = "<group>";
 		};
-		BADE2F912F32B46F00027F72 /* Habit List */ = {
+		BADE2F912F32B46F00027F72 /* HabitList */ = {
 			isa = PBXGroup;
 			children = (
 				BA74BFA02F32BC060093D032 /* Models */,
 				BA74BFA42F32BC410093D032 /* Views */,
 				BA74BFA12F32BC100093D032 /* ViewModels */,
 			);
-			path = "Habit List";
+			path = HabitList;
 			sourceTree = "<group>";
 		};
 		BADE2F922F32B47F00027F72 /* Extension */ = {
@@ -352,6 +357,7 @@
 				BADE2F942F32B49500027F72 /* DeveloperPreview.swift in Sources */,
 				BADE2F982F32B4B600027F72 /* HabitListViewModel.swift in Sources */,
 				BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */,
+				BA764CFB2F369EAE00FC8F0F /* AddHabitView.swift in Sources */,
 				BA74BFA62F32BC5E0093D032 /* HabitButtonViewModel.swift in Sources */,
 				BA47ED2F2F31E1FC00999865 /* HabitTrackerApp.swift in Sources */,
 				BA74BF9F2F32BBBE0093D032 /* HabitButtonView.swift in Sources */,
@@ -371,6 +377,7 @@
 				BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */,
 				BA74BF9C2F32B9DC0093D032 /* WelcomeView.swift in Sources */,
 				BA74BFA22F32BC160093D032 /* HabitButtonView.swift in Sources */,
+				BA764CFC2F369F8D00FC8F0F /* AddHabitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +389,7 @@
 				BA74BF972F32B9CB0093D032 /* Habit.swift in Sources */,
 				BA74BF9A2F32B9D60093D032 /* HabitTrackerApp.swift in Sources */,
 				BA74BF9D2F32B9DC0093D032 /* WelcomeView.swift in Sources */,
+				BA764CFD2F369F8D00FC8F0F /* AddHabitView.swift in Sources */,
 				BA47ED4E2F31E1FD00999865 /* HabitTrackerUITestsLaunchTests.swift in Sources */,
 				BA47ED4C2F31E1FD00999865 /* HabitTrackerUITests.swift in Sources */,
 				BA74BF952F32B9C80093D032 /* HabitListViewModel.swift in Sources */,
