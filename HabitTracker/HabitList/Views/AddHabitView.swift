@@ -8,32 +8,39 @@
 import SwiftUI
 
 struct AddHabitView: View {
-    @State var emoji: String = ""
-    @State var title: String = ""
-    @State var description: String = ""
+    @StateObject var viewModel = AddHabitViewModel()
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
             // Emoji picker
-            TextField("⚽", text: $emoji.max(1))
+            TextField("⚽", text: $viewModel.emoji.max(1))
                 .frame(width: 65)
                 .font(.system(size: 60))
                 .padding(.top, 30)
             
             // Title
-            TextField("Title", text: $title.max(25))
+            TextField("Title", text: $viewModel.title.max(25))
                 .font(.title)
                 .fontWeight(.bold)
             
             // Description
-            TextField("Description", text: $description.max(70), axis: .vertical)
+            TextField("Description", text: $viewModel.description.max(70), axis: .vertical)
                 .font(.title2)
                 .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+            
+            // Error Text
+            if(!viewModel.error.isEmpty) {
+                Text(viewModel.error)
+                    .foregroundStyle(.red)
+            }
             
             // Add Button
             Button(
                 action: {
-                    
+                    if(viewModel.addNewHabit()) {
+                        presentationMode.wrappedValue.dismiss()
+                    }
                 },
                 label: {
                     Text("Add")

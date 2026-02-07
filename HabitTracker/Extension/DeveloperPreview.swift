@@ -9,7 +9,7 @@ import Foundation
 
 class DeveloperPreview {
     // MARK: Habits
-    static let habits: [Habit] = [
+    static var habits: [Habit] = [
         .init(
             id: NSUUID().uuidString,
             emoji: "🖊️",
