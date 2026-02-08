@@ -31,6 +31,6 @@ class HabitListViewModel: ObservableObject {
     }
     
     func refreshHabits() {
-        habits = DeveloperPreview.habits
+        habits = HabitService.shared.retrieveHabits()
     }
 }

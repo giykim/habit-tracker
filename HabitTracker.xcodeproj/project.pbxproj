@@ -36,6 +36,9 @@
 		BA764CFF2F36EF1000FC8F0F /* AddHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764CFE2F36EF1000FC8F0F /* AddHabitViewModel.swift */; };
 		BA764D002F36EF1000FC8F0F /* AddHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764CFE2F36EF1000FC8F0F /* AddHabitViewModel.swift */; };
 		BA764D012F36EF1000FC8F0F /* AddHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764CFE2F36EF1000FC8F0F /* AddHabitViewModel.swift */; };
+		BA764D042F3849CE00FC8F0F /* HabitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764D032F3849CE00FC8F0F /* HabitService.swift */; };
+		BA764D052F3849CE00FC8F0F /* HabitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764D032F3849CE00FC8F0F /* HabitService.swift */; };
+		BA764D062F3849CE00FC8F0F /* HabitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA764D032F3849CE00FC8F0F /* HabitService.swift */; };
 		BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 		BADE2F8D2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
 		BADE2F8E2F32A6B300027F72 /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADE2F8B2F32A6B300027F72 /* HabitListView.swift */; };
@@ -76,6 +79,7 @@
 		BA74BFA52F32BC5E0093D032 /* HabitButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitButtonViewModel.swift; sourceTree = "<group>"; };
 		BA764CFA2F369EAE00FC8F0F /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 		BA764CFE2F36EF1000FC8F0F /* AddHabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewModel.swift; sourceTree = "<group>"; };
+		BA764D032F3849CE00FC8F0F /* HabitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitService.swift; sourceTree = "<group>"; };
 		BADE2F8B2F32A6B300027F72 /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		BADE2F932F32B49500027F72 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		BADE2F952F32B4A600027F72 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				BADE2F8F2F32B43700027F72 /* App */,
+				BA764D022F3849B000FC8F0F /* Data */,
 				BADE2F922F32B47F00027F72 /* Extension */,
 				BADE2F912F32B46F00027F72 /* HabitList */,
 				BADE2F902F32B46700027F72 /* Welcome */,
@@ -191,6 +196,14 @@
 				BADE2F8B2F32A6B300027F72 /* HabitListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BA764D022F3849B000FC8F0F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BA764D032F3849CE00FC8F0F /* HabitService.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		BADE2F8F2F32B43700027F72 /* App */ = {
@@ -359,6 +372,7 @@
 			files = (
 				BA47ED312F31E1FC00999865 /* WelcomeView.swift in Sources */,
 				BADE2F962F32B4A600027F72 /* Habit.swift in Sources */,
+				BA764D042F3849CE00FC8F0F /* HabitService.swift in Sources */,
 				BADE2F942F32B49500027F72 /* DeveloperPreview.swift in Sources */,
 				BADE2F982F32B4B600027F72 /* HabitListViewModel.swift in Sources */,
 				BADE2F8C2F32A6B300027F72 /* HabitListView.swift in Sources */,
@@ -376,6 +390,7 @@
 			files = (
 				BA74BF982F32B9D10093D032 /* DeveloperPreview.swift in Sources */,
 				BA74BF942F32B9C80093D032 /* HabitListViewModel.swift in Sources */,
+				BA764D052F3849CE00FC8F0F /* HabitService.swift in Sources */,
 				BA47ED422F31E1FD00999865 /* HabitTrackerTests.swift in Sources */,
 				BA74BF9B2F32B9D70093D032 /* HabitTrackerApp.swift in Sources */,
 				BA74BF962F32B9CB0093D032 /* Habit.swift in Sources */,
@@ -395,6 +410,7 @@
 				BADE2F8E2F32A6B300027F72 /* HabitListView.swift in Sources */,
 				BA74BF972F32B9CB0093D032 /* Habit.swift in Sources */,
 				BA74BF9A2F32B9D60093D032 /* HabitTrackerApp.swift in Sources */,
+				BA764D062F3849CE00FC8F0F /* HabitService.swift in Sources */,
 				BA764D012F36EF1000FC8F0F /* AddHabitViewModel.swift in Sources */,
 				BA74BF9D2F32B9DC0093D032 /* WelcomeView.swift in Sources */,
 				BA764CFD2F369F8D00FC8F0F /* AddHabitView.swift in Sources */,

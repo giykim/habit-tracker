@@ -17,7 +17,7 @@ class AddHabitViewModel: ObservableObject {
         if (validateNewHabit()) {
             error = ""
             
-            DeveloperPreview.habits.append(Habit(
+            HabitService.shared.addHabit(Habit(
                 id: UUID().uuidString,
                 emoji: emoji,
                 title: title,
