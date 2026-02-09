@@ -17,8 +17,10 @@ class HabitService {
     init() {
         habits = retrieveHabits()
     }
-    
-    // MARK: Data Conversion
+}
+
+// MARK: Data Conversion
+extension HabitService {
     // Save
     func saveHabits() {
         // Convert to JSON
@@ -33,17 +35,27 @@ class HabitService {
         
         return decodedHabits
     }
-    
-    // MARK: Data Queries
-    // Add
+}
+
+// MARK: Data Queries
+extension HabitService {
+    // Add Habit
     func addHabit(_ habit: Habit) {
         habits.append(habit)
         saveHabits()
     }
     
-    // Delete
+    // Delete Habit
     func deleteHabbit(_ habit: Habit) {
         habits.removeAll { $0.id == habit.id }
+        saveHabits()
+    }
+    
+    // Update Specific Habit
+    func updateHabit(forHabit habit: Habit) {
+        guard let index = habits.firstIndex(where: { $0.id == habit.id } ) else { return }
+        
+        habits[index] = habit
         saveHabits()
     }
 }
