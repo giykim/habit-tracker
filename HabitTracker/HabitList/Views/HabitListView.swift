@@ -29,7 +29,7 @@ struct HabitListView: View {
                         .foregroundStyle(.cyan)
                     
                     // List Streak
-                    Text("🔥 1 day(s) Streak")
+                    Text("🔥 \(viewModel.globalStreak) \(viewModel.globalStreak == 1 ? "day" : "days") streak")
                         .font(.title3)
                 }
                 

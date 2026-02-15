@@ -30,6 +30,21 @@ extension HabitButtonViewModel {
     func buttonClicked() {
         if (!isLastDateSameAsToday()) {
             increaseStreak()
+            updateGlobalStreak()
+        }
+    }
+    
+    func updateGlobalStreak() {
+        var allHabitsAreDone = true
+        
+        for h in HabitService.shared.retrieveHabits() {
+            if !isLastDateSameAsToday(date: h.lastDateDone, isButtonHabit: false) {
+                allHabitsAreDone = false
+            }
+        }
+        
+        if allHabitsAreDone {
+            HabitService.shared.increaseGlobalStreak()
         }
     }
     
@@ -47,21 +62,28 @@ extension HabitButtonViewModel {
         if (calendar.numberOfDaysBetween(lastDateDone, and: Date()) > 2) {
             habit.streak = 0
             HabitService.shared.updateHabit(forHabit: habit)
+            HabitService.shared.resetGlobalStreak()
         }
     }
     
-    func isLastDateSameAsToday() -> Bool {
-        if (habit.lastDateDone != nil) {
-            let formatter = DateFormatter()
-            formatter.timeStyle = .none
-            formatter.dateStyle = .short
-            
-            let today = formatter.string(from: Date())
-            let lastDateDone = formatter.string(from: habit.lastDateDone!)
-            
-            return today == lastDateDone
+    func isLastDateSameAsToday(date: Date? = nil, isButtonHabit: Bool = true) -> Bool {
+        // Formatter
+        let formatter = DateFormatter()
+        formatter.timeStyle = .none
+        formatter.dateStyle = .short
+        
+        // Today's Date
+        let today = formatter.string(from: Date())
+        
+        // Date to compare
+        var dateToCompare = ""
+        
+        if isButtonHabit && habit.lastDateDone != nil {
+            dateToCompare = formatter.string(from: habit.lastDateDone!)
+        } else if !isButtonHabit && date != nil {
+            dateToCompare = formatter.string(from: date!)
         }
         
-        return false
+        return today == dateToCompare
     }
 }

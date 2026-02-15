@@ -7,10 +7,14 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 class HabitService {
+    @AppStorage("GLOBAL_STREAK_KEY") var globalStreak: Int = 0
     @AppStorage("HABITS_KEY") var savedHabits: Data = Data()
     private var habits: [Habit] = []
+    
+    let habitServiceChanged = PassthroughSubject<Void, Never>()
     
     static let shared = HabitService()
     
@@ -27,6 +31,8 @@ extension HabitService {
         guard let habitsJSON = try? JSONEncoder().encode(habits) else { return }
         
         self.savedHabits = habitsJSON
+        
+        habitServiceChanged.send()
     }
 
     // Retrieve
@@ -48,6 +54,7 @@ extension HabitService {
     // Delete Habit
     func deleteHabbit(_ habit: Habit) {
         habits.removeAll { $0.id == habit.id }
+        updateGlobalStreak()
         saveHabits()
     }
     
@@ -57,5 +64,24 @@ extension HabitService {
         
         habits[index] = habit
         saveHabits()
+    }
+    
+    // Increase Global Streak
+    func increaseGlobalStreak() {
+        globalStreak += 1
+        habitServiceChanged.send()
+    }
+    
+    // Reset Global Streak
+    func resetGlobalStreak() {
+        globalStreak = 0
+        habitServiceChanged.send()
+    }
+    
+    // Update Global Streak
+    func updateGlobalStreak() {
+        if habits.count == 0 {
+            resetGlobalStreak()
+        }
     }
 }
